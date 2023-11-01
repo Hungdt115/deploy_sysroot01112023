@@ -1,0 +1,11 @@
+[Unit]
+Description=WifiSetup
+
+[Service]
+User=root
+ExecStart=/script/wifi_setup.sh 'TayNguyen' 'taynguyen12345'
+RemainAfterExit=yes
+StartLimitInterval=10
+
+[Install]
+WantedBy=multi-user.target

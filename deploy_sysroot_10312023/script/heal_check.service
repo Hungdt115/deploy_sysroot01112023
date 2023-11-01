@@ -1,0 +1,12 @@
+[Unit]
+Description=HealCheck
+After=restream.service
+
+[Service]
+User=root
+ExecStart=/usr/local/linuxapp/bin/HealCheck
+Restart=always
+StartLimitInterval=10
+
+[Install]
+WantedBy=multi-user.target
